@@ -145,7 +145,7 @@ gsoc-p-2-readme/
 └── README.md
 ```
 
-## ⚡ Quick Start
+##  Quick Start
 ```bash
 # 1) Open the final benchmark notebook
 notebook/6-Hybrid_LorentzParT_MAE_GSoC2026_FINAL -.ipynb
