@@ -6,7 +6,7 @@ This project targets **10-class JetClass event classification** using a **hybrid
 The core research question is whether a physics-aware hybrid model, trained in a two-stage self-supervised pipeline, can improve both **final performance** and **training reliability**.  
 All final claims and metrics are reported from: `notebook/6-Hybrid_LorentzParT_MAE_GSoC2026_FINAL -.ipynb`.
 
-## ⭐ Key Contributions
+##  Key Contributions
 - Designed a **hybrid ParT + Lorentz model** to combine particle-interaction modeling with Lorentz-aware representation learning.
 - Demonstrated measurable **MAE pretraining impact** through controlled pretrain-vs-scratch comparisons.
 - Reported **multi-seed behavior** (mean ± std) to evaluate reliability beyond single-run performance.
@@ -14,10 +14,10 @@ All final claims and metrics are reported from: `notebook/6-Hybrid_LorentzParT_M
 - Integrated **stability-oriented engineering utilities** (checkpointing, early stopping, numerical safety, compile fallback) to make training robust.
 
 ## Why This Matters
-- 🔬 **LHC relevance:** Better jet tagging directly supports downstream high-energy physics analyses.
-- 📈 **Reliable ML for physics:** Multi-seed reporting helps avoid over-trusting one lucky run.
-- 🧪 **Evidence-driven modeling:** Ablations and controlled comparisons make conclusions more defensible.
-- 🛠️ **Research-to-engineering bridge:** The notebook sequence emphasizes reproducibility, not just headline metrics.
+-  **LHC relevance:** Better jet tagging directly supports downstream high-energy physics analyses.
+-  **Reliable ML for physics:** Multi-seed reporting helps avoid over-trusting one lucky run.
+-  **Evidence-driven modeling:** Ablations and controlled comparisons make conclusions more defensible.
+-  **Research-to-engineering bridge:** The notebook sequence emphasizes reproducibility, not just headline metrics.
 
 ## Methodology
 The final pipeline follows this sequence:
@@ -59,7 +59,7 @@ Primary tracked metrics:
 - Macro AUC (OvR)
 - Macro AUC (OvO)
 
-## 📊 Results (Final Notebook)
+##  Results (Final Notebook)
 From `notebook/6-Hybrid_LorentzParT_MAE_GSoC2026_FINAL -.ipynb`:
 
 - **Overall Test Accuracy:** **0.7020**
@@ -89,7 +89,7 @@ Mean ± std bars are used in the comparison plot to communicate both performance
 
 <img src="images/multiseed_comparison.png" alt="Multi-seed comparison" width="900"/>
 
-## 🧠 Notebook Journey
+##  Notebook Journey
 
 ### Notebook Progression Table
 | Notebook | What was added | What problem it solved | Improvement it brought |
@@ -101,7 +101,7 @@ Mean ± std bars are used in the comparison plot to communicate both performance
 | `5-Hybrid_Lorentz_ParT_MAE_JetClass_GSoC2026.ipynb` | Pre-final integration pass | Unified successful experimental elements | Reduced transition risk to final benchmark notebook |
 | `6-Hybrid_LorentzParT_MAE_GSoC2026_FINAL -.ipynb` | Final consolidated benchmark pipeline | Single source of truth for final reporting | Best reported final performance and complete evidence package |
 
-### 🔄 Iterative Improvements
+###  Iterative Improvements
 - **Notebook 1 → 2**
   - **What changed:** Workflow refinement pass across setup/data/training organization.
   - **Why it changed:** Early experimentation needed lower friction for repeated runs.
